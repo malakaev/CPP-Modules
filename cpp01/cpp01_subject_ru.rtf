@@ -1,0 +1,570 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\froman\fcharset0 Times-Bold;
+\f3\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red239\green239\blue239;\red21\green21\blue21;
+}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c94902\c94902\c94902;\cssrgb\c10980\c10980\c10980;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid1\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww18560\viewh24940\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs36 \cf0 CPP Module 01
+\f1\b0\fs24 \
+\
+C++ - \uc0\u1101 \u1090 \u1086  \u1103 \u1079 \u1099 \u1082  \u1087 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1080 \u1088 \u1086 \u1074 \u1072 \u1085 \u1080 \u1103  \u1086 \u1073 \u1097 \u1077 \u1075 \u1086  \u1085 \u1072 \u1079 \u1085 \u1072 \u1095 \u1077 \u1085 \u1080 \u1103 , \u1089 \u1086 \u1079 \u1076 \u1072 \u1085 \u1085 \u1099 \u1081  \u1041 \u1100 \u1103 \u1088 \u1085 \u1077  \u1057 \u1090 \u1088 \u1072 \u1091 \u1089 \u1090 \u1088 \u1091 \u1087 \u1086 \u1084  \u1082 \u1072 \u1082  \u1088 \u1072 \u1089 \u1096 \u1080 \u1088 \u1077 \u1085 \u1080 \u1077  \u1103 \u1079 \u1099 \u1082 \u1072  \u1087 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1080 \u1088 \u1086 \u1074 \u1072 \u1085 \u1080 \u1103  C, \u1080 \u1083 \u1080  "C \u1089  \u1082 \u1083 \u1072 \u1089 \u1089 \u1072 \u1084 \u1080 " (\u1080 \u1089 \u1090 \u1086 \u1095 \u1085 \u1080 \u1082 : \u1042 \u1080 \u1082 \u1080 \u1087 \u1077 \u1076 \u1080 \u1103 ).\
+\uc0\u1062 \u1077 \u1083 \u1100  \u1101 \u1090 \u1080 \u1093  \u1084 \u1086 \u1076 \u1091 \u1083 \u1077 \u1081  - \u1087 \u1086 \u1079 \u1085 \u1072 \u1082 \u1086 \u1084 \u1080 \u1090 \u1100  \u1074 \u1072 \u1089  \u1089  \u1086 \u1073 \u1098 \u1077 \u1082 \u1090 \u1085 \u1086 -\u1086 \u1088 \u1080 \u1077 \u1085 \u1090 \u1080 \u1088 \u1086 \u1074 \u1072 \u1085 \u1085 \u1099 \u1084  \u1087 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1080 \u1088 \u1086 \u1074 \u1072 \u1085 \u1080 \u1077 \u1084 . \u1069 \u1090 \u1086  \u1089 \u1090 \u1072 \u1085 \u1077 \u1090  \u1086 \u1090 \u1087 \u1088 \u1072 \u1074 \u1085 \u1086 \u1081  \u1090 \u1086 \u1095 \u1082 \u1086 \u1081  \u1074 \u1072 \u1096 \u1077 \u1075 \u1086  \u1087 \u1091 \u1090 \u1077 \u1096 \u1077 \u1089 \u1090 \u1074 \u1080 \u1103  \u1087 \u1086  C++. \u1052 \u1085 \u1086 \u1075 \u1080 \u1077  \u1103 \u1079 \u1099 \u1082 \u1080  \u1088 \u1077 \u1082 \u1086 \u1084 \u1077 \u1085 \u1076 \u1091 \u1102 \u1090 \u1089 \u1103  \u1076 \u1083 \u1103  \u1080 \u1079 \u1091 \u1095 \u1077 \u1085 \u1080 \u1103  \u1054 \u1054 \u1055 . \u1052 \u1099  \u1088 \u1077 \u1096 \u1080 \u1083 \u1080  \u1074 \u1099 \u1073 \u1088 \u1072 \u1090 \u1100  C++, \u1087 \u1086 \u1089 \u1082 \u1086 \u1083 \u1100 \u1082 \u1091  \u1086 \u1085  \u1103 \u1074 \u1083 \u1103 \u1077 \u1090 \u1089 \u1103  \u1087 \u1088 \u1086 \u1080 \u1079 \u1074 \u1086 \u1076 \u1085 \u1099 \u1084  \u1086 \u1090  \u1074 \u1072 \u1096 \u1077 \u1075 \u1086  \u1089 \u1090 \u1072 \u1088 \u1086 \u1075 \u1086  \u1076 \u1088 \u1091 \u1075 \u1072  C. \u1055 \u1086 \u1090 \u1086 \u1084 \u1091  \u1095 \u1090 \u1086  \u1101 \u1090 \u1086  \u1089 \u1083 \u1086 \u1078 \u1085 \u1099 \u1081  \u1103 \u1079 \u1099 \u1082 , \u1080  \u1076 \u1083 \u1103  \u1090 \u1086 \u1075 \u1086 , \u1095 \u1090 \u1086 \u1073 \u1099  \u1074 \u1089 \u1077  \u1073 \u1099 \u1083 \u1086  \u1087 \u1088 \u1086 \u1089 \u1090 \u1086 , \u1074 \u1072 \u1096  \u1082 \u1086 \u1076  \u1073 \u1091 \u1076 \u1077 \u1090  \u1089 \u1086 \u1086 \u1090 \u1074 \u1077 \u1090 \u1089 \u1090 \u1074 \u1086 \u1074 \u1072 \u1090 \u1100  \u1089 \u1090 \u1072 \u1085 \u1076 \u1072 \u1088 \u1090 \u1091  C++ 98.\
+\uc0\u1052 \u1099  \u1079 \u1085 \u1072 \u1077 \u1084 , \u1095 \u1090 \u1086  \u1089 \u1086 \u1074 \u1088 \u1077 \u1084 \u1077 \u1085 \u1085 \u1099 \u1081  C++ \u1089 \u1080 \u1083 \u1100 \u1085 \u1086  \u1086 \u1090 \u1083 \u1080 \u1095 \u1072 \u1077 \u1090 \u1089 \u1103  \u1074 \u1086  \u1084 \u1085 \u1086 \u1075 \u1080 \u1093  \u1072 \u1089 \u1087 \u1077 \u1082 \u1090 \u1072 \u1093 . \u1058 \u1072 \u1082  \u1095 \u1090 \u1086 , \u1077 \u1089 \u1083 \u1080  \u1074 \u1099  \u1093 \u1086 \u1090 \u1080 \u1090 \u1077  \u1089 \u1090 \u1072 \u1090 \u1100  \u1086 \u1087 \u1099 \u1090 \u1085 \u1099 \u1084  \u1088 \u1072 \u1079 \u1088 \u1072 \u1073 \u1086 \u1090 \u1095 \u1080 \u1082 \u1086 \u1084  C++, \u1074 \u1072 \u1084  \u1088 \u1077 \u1096 \u1072 \u1090 \u1100  \u1080 \u1076 \u1090 \u1080  \u1076 \u1072 \u1083 \u1100 \u1096 \u1077  \u1087 \u1086 \u1089 \u1083 \u1077  42 Common Core!\
+\
+\
+\pard\pardeftab720\sl760\sa240\partightenfactor0
+
+\f2\b\fs66\fsmilli33333 \cf2 \expnd0\expndtw0\kerning0
+Exercise 00: BraiiiiiiinnnzzzZ 
+\f3\b0\fs24 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1105\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth11498\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 \cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth12653\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth12653\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth12653\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth12653\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Turn-in directory : ex00/ 
+\fs24 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth12653\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth12653\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Files to turn in : Makefile, main.cpp, Zombie.\{h, hpp\}, Zombie.cpp, newZombie.cpp, randomChump.cpp 
+\fs24 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth12653\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth12653\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Forbidden functions : None 
+\fs24 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl360\slmult1\partightenfactor0
+
+\fs36 \cf2 \uc0\u1042 \u1086 -\u1087 \u1077 \u1088 \u1074 \u1099 \u1093 , \u1088 \u1077 \u1072 \u1083 \u1080 \u1079 \u1091 \u1081 \u1090 \u1077  \u1082 \u1083 \u1072 \u1089 \u1089  \u1047 \u1086 \u1084 \u1073 \u1080 . \u1054 \u1085  \u1080 \u1084 \u1077 \u1077 \u1090  \u1089 \u1090 \u1088 \u1086 \u1082 \u1086 \u1074 \u1086 \u1077  \u1095 \u1072 \u1089 \u1090 \u1085 \u1086 \u1077  \u1080 \u1084 \u1103  \u1072 \u1090 \u1088 \u1080 \u1073 \u1091 \u1090 \u1072 .\
+\uc0\u1044 \u1086 \u1073 \u1072 \u1074 \u1100 \u1090 \u1077  \u1092 \u1091 \u1085 \u1082 \u1094 \u1080 \u1102 -\u1095 \u1083 \u1077 \u1085  void announce( void ); \u1074  \u1082 \u1083 \u1072 \u1089 \u1089  Zombie. \u1047 \u1086 \u1084 \u1073 \u1080  \u1086 \u1073 \u1098 \u1103 \u1074 \u1083 \u1103 \u1102 \u1090  \u1086  \u1089 \u1077 \u1073 \u1077  \u1089 \u1083 \u1077 \u1076 \u1091 \u1102 \u1097 \u1080 \u1084  \u1086 \u1073 \u1088 \u1072 \u1079 \u1086 \u1084 :\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 <name>: BraiiiiiiinnnzzzZ...\
+\
+\uc0\u1053 \u1077  \u1087 \u1077 \u1095 \u1072 \u1090 \u1072 \u1081 \u1090 \u1077  \u1091 \u1075 \u1083 \u1086 \u1074 \u1099 \u1077  \u1089 \u1082 \u1086 \u1073 \u1082 \u1080  (< \u1080  >). \u1044 \u1083 \u1103  \u1079 \u1086 \u1084 \u1073 \u1080  \u1087 \u1086  \u1080 \u1084 \u1077 \u1085 \u1080  Foo \u1089 \u1086 \u1086 \u1073 \u1097 \u1077 \u1085 \u1080 \u1077  \u1073 \u1091 \u1076 \u1077 \u1090  \u1089 \u1083 \u1077 \u1076 \u1091 \u1102 \u1097 \u1080 \u1084 :\
+Foo: BraiiiiiiinnnzzzZ...\
+\
+\uc0\u1047 \u1072 \u1090 \u1077 \u1084  \u1088 \u1077 \u1072 \u1083 \u1080 \u1079 \u1091 \u1081 \u1090 \u1077  \u1076 \u1074 \u1077  \u1089 \u1083 \u1077 \u1076 \u1091 \u1102 \u1097 \u1080 \u1077  \u1092 \u1091 \u1085 \u1082 \u1094 \u1080 \u1080 :\
+\'95 Zombie* newZombie( std::string name );\uc0\u8232 \u1054 \u1085  \u1089 \u1086 \u1079 \u1076 \u1072 \u1077 \u1090  \u1079 \u1086 \u1084 \u1073 \u1080 , \u1076 \u1072 \u1077 \u1090  \u1077 \u1084 \u1091  \u1080 \u1084 \u1103  \u1080  \u1074 \u1086 \u1079 \u1074 \u1088 \u1072 \u1097 \u1072 \u1077 \u1090  \u1077 \u1075 \u1086 , \u1095 \u1090 \u1086 \u1073 \u1099  \u1074 \u1099  \u1084 \u1086 \u1075 \u1083 \u1080  \u1080 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1086 \u1074 \u1072 \u1090 \u1100  \u1077 \u1075 \u1086  \u1074 \u1085 \u1077  \u1086 \u1073 \u1083 \u1072 \u1089 \u1090 \u1080  \u1076 \u1077 \u1081 \u1089 \u1090 \u1074 \u1080 \u1103  \u1092 \u1091 \u1085 \u1082 \u1094 \u1080 \u1080 .\
+\
+\'95 void randomChump( std::string name );\uc0\u8232 \u1054 \u1085  \u1089 \u1086 \u1079 \u1076 \u1072 \u1077 \u1090  \u1079 \u1086 \u1084 \u1073 \u1080 , \u1085 \u1072 \u1079 \u1099 \u1074 \u1072 \u1077 \u1090  \u1077 \u1075 \u1086 , \u1080  \u1079 \u1086 \u1084 \u1073 \u1080  \u1086 \u1073 \u1098 \u1103 \u1074 \u1083 \u1103 \u1077 \u1090  \u1086  \u1089 \u1077 \u1073 \u1077 .\
+\
+\uc0\u1048 \u1090 \u1072 \u1082 , \u1074  \u1095 \u1077 \u1084  \u1089 \u1086 \u1073 \u1089 \u1090 \u1074 \u1077 \u1085 \u1085 \u1086  \u1089 \u1084 \u1099 \u1089 \u1083  \u1091 \u1087 \u1088 \u1072 \u1078 \u1085 \u1077 \u1085 \u1080 \u1103 ? \u1042 \u1099  \u1076 \u1086 \u1083 \u1078 \u1085 \u1099  \u1086 \u1087 \u1088 \u1077 \u1076 \u1077 \u1083 \u1080 \u1090 \u1100 , \u1074  \u1082 \u1072 \u1082 \u1086 \u1084  \u1089 \u1083 \u1091 \u1095 \u1072 \u1077  \u1083 \u1091 \u1095 \u1096 \u1077  \u1088 \u1072 \u1079 \u1084 \u1077 \u1089 \u1090 \u1080 \u1090 \u1100  \u1079 \u1086 \u1084 \u1073 \u1080  \u1074  \u1089 \u1090 \u1077 \u1082 \u1077  \u1080 \u1083 \u1080  \u1082 \u1091 \u1095 \u1077 .\
+\
+\uc0\u1047 \u1086 \u1084 \u1073 \u1080  \u1076 \u1086 \u1083 \u1078 \u1085 \u1099  \u1073 \u1099 \u1090 \u1100  \u1091 \u1085 \u1080 \u1095 \u1090 \u1086 \u1078 \u1077 \u1085 \u1099 , \u1082 \u1086 \u1075 \u1076 \u1072  \u1086 \u1085 \u1080  \u1074 \u1072 \u1084  \u1073 \u1086 \u1083 \u1100 \u1096 \u1077  \u1085 \u1077  \u1087 \u1086 \u1085 \u1072 \u1076 \u1086 \u1073 \u1103 \u1090 \u1089 \u1103 . \u1044 \u1077 \u1089 \u1090 \u1088 \u1091 \u1082 \u1090 \u1086 \u1088  \u1076 \u1086 \u1083 \u1078 \u1077 \u1085  \u1085 \u1072 \u1087 \u1077 \u1095 \u1072 \u1090 \u1072 \u1090 \u1100  \u1089 \u1086 \u1086 \u1073 \u1097 \u1077 \u1085 \u1080 \u1077  \u1089  \u1080 \u1084 \u1077 \u1085 \u1077 \u1084  \u1079 \u1086 \u1084 \u1073 \u1080  \u1076 \u1083 \u1103  \u1094 \u1077 \u1083 \u1077 \u1081  \u1086 \u1090 \u1083 \u1072 \u1076 \u1082 \u1080 .\
+\
+\pard\pardeftab720\sl760\sa240\partightenfactor0
+
+\f2\b\fs66\fsmilli33333 \cf2 Exercise 01: Moar brainz! 
+\f3\b0\fs24 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth899\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth9445\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 \cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth10395\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth10395\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Moar brainz! 
+\fs24 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth10395\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth10395\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Turn-in directory : ex01/ 
+\fs24 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth10395\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth10395\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Files to turn in : Makefile, main.cpp, Zombie.\{h, hpp\}, Zombie.cpp, zombieHorde.cpp 
+\fs24 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth10395\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth10395\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Forbidden functions : None 
+\fs24 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl312\slmult1\partightenfactor0
+
+\fs36 \cf2 \uc0\u1042 \u1088 \u1077 \u1084 \u1103  \u1089 \u1086 \u1079 \u1076 \u1072 \u1090 \u1100  \u1086 \u1088 \u1076 \u1091  \u1079 \u1086 \u1084 \u1073 \u1080 !\
+\uc0\u1056 \u1077 \u1072 \u1083 \u1080 \u1079 \u1091 \u1081 \u1090 \u1077  \u1089 \u1083 \u1077 \u1076 \u1091 \u1102 \u1097 \u1091 \u1102  \u1092 \u1091 \u1085 \u1082 \u1094 \u1080 \u1102  \u1074  \u1089 \u1086 \u1086 \u1090 \u1074 \u1077 \u1090 \u1089 \u1090 \u1074 \u1091 \u1102 \u1097 \u1077 \u1084  \u1092 \u1072 \u1081 \u1083 \u1077 :\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f2\b \cf2 Zombie*    zombieHorde( int N,  std::string name );
+\f3\b0\fs32 \
+\pard\pardeftab720\sl312\slmult1\partightenfactor0
+
+\fs36 \cf2 \
+\uc0\u1054 \u1085  \u1076 \u1086 \u1083 \u1078 \u1077 \u1085  \u1074 \u1099 \u1076 \u1077 \u1083 \u1080 \u1090 \u1100  N \u1086 \u1073 \u1098 \u1077 \u1082 \u1090 \u1086 \u1074 -\u1079 \u1086 \u1084 \u1073 \u1080  \u1079 \u1072  \u1086 \u1076 \u1085 \u1086  \u1074 \u1099 \u1076 \u1077 \u1083 \u1077 \u1085 \u1080 \u1077 . \u1047 \u1072 \u1090 \u1077 \u1084  \u1086 \u1085  \u1076 \u1086 \u1083 \u1078 \u1077 \u1085  \u1080 \u1085 \u1080 \u1094 \u1080 \u1072 \u1083 \u1080 \u1079 \u1080 \u1088 \u1086 \u1074 \u1072 \u1090 \u1100  \u1079 \u1086 \u1084 \u1073 \u1080 , \u1087 \u1088 \u1080 \u1089 \u1074 \u1086 \u1080 \u1074  \u1082 \u1072 \u1078 \u1076 \u1086 \u1084 \u1091  \u1080 \u1079  \u1085 \u1080 \u1093  \u1080 \u1084 \u1103 , \u1087 \u1077 \u1088 \u1077 \u1076 \u1072 \u1085 \u1085 \u1086 \u1077  \u1074  \u1082 \u1072 \u1095 \u1077 \u1089 \u1090 \u1074 \u1077  \u1087 \u1072 \u1088 \u1072 \u1084 \u1077 \u1090 \u1088 \u1072 . \u1060 \u1091 \u1085 \u1082 \u1094 \u1080 \u1103  \u1074 \u1086 \u1079 \u1074 \u1088 \u1072 \u1097 \u1072 \u1077 \u1090  \u1091 \u1082 \u1072 \u1079 \u1072 \u1090 \u1077 \u1083 \u1100  \u1085 \u1072  \u1087 \u1077 \u1088 \u1074 \u1086 \u1075 \u1086  \u1079 \u1086 \u1084 \u1073 \u1080 .\
+\uc0\u1056 \u1077 \u1072 \u1083 \u1080 \u1079 \u1091 \u1081 \u1090 \u1077  \u1089 \u1074 \u1086 \u1080  \u1089 \u1086 \u1073 \u1089 \u1090 \u1074 \u1077 \u1085 \u1085 \u1099 \u1077  \u1090 \u1077 \u1089 \u1090 \u1099 , \u1095 \u1090 \u1086 \u1073 \u1099  \u1091 \u1073 \u1077 \u1076 \u1080 \u1090 \u1100 \u1089 \u1103 , \u1095 \u1090 \u1086  \u1074 \u1072 \u1096 \u1072  \u1092 \u1091 \u1085 \u1082 \u1094 \u1080 \u1103  zombieHorde() \u1088 \u1072 \u1073 \u1086 \u1090 \u1072 \u1077 \u1090  \u1076 \u1086 \u1083 \u1078 \u1085 \u1099 \u1084  \u1086 \u1073 \u1088 \u1072 \u1079 \u1086 \u1084 .\
+\uc0\u1055 \u1086 \u1087 \u1088 \u1086 \u1073 \u1091 \u1081 \u1090 \u1077  \u1074 \u1099 \u1079 \u1074 \u1072 \u1090 \u1100  \u1092 \u1091 \u1085 \u1082 \u1094 \u1080 \u1102  announce() \u1076 \u1083 \u1103  \u1082 \u1072 \u1078 \u1076 \u1086 \u1075 \u1086  \u1080 \u1079  \u1079 \u1086 \u1084 \u1073 \u1080 .\
+\
+\uc0\u1053 \u1077  \u1079 \u1072 \u1073 \u1091 \u1076 \u1100 \u1090 \u1077  \u1091 \u1076 \u1072 \u1083 \u1080 \u1090 \u1100  \u1074 \u1089 \u1077 \u1093  \u1079 \u1086 \u1084 \u1073 \u1080  \u1080  \u1087 \u1088 \u1086 \u1074 \u1077 \u1088 \u1080 \u1090 \u1100 , \u1085 \u1077 \u1090  \u1083 \u1080  \u1091 \u1090 \u1077 \u1095 \u1077 \u1082  \u1087 \u1072 \u1084 \u1103 \u1090 \u1080 .\
+\
+\pard\pardeftab720\sl760\sa240\partightenfactor0
+
+\f2\b\fs66\fsmilli33333 \cf2 Exercise 02: HI THIS IS BRAIN 
+\f3\b0\fs24 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth347\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3919\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 \cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth4316\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth4316\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 HI THIS IS BRAIN 
+\fs24 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth4316\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth4316\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Turn-in directory : ex02/ 
+\fs24 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth4316\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth4316\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Files to turn in : Makefile, main.cpp 
+\fs24 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth4316\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth4316\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Forbidden functions : None 
+\fs24 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl312\slmult1\partightenfactor0
+
+\fs28 \cf2 \
+\pard\pardeftab720\sl312\slmult1\partightenfactor0
+
+\fs36 \cf2 \uc0\u1053 \u1072 \u1087 \u1080 \u1096 \u1080 \u1090 \u1077  \u1087 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1091 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1072 \u1103  \u1089 \u1086 \u1076 \u1077 \u1088 \u1078 \u1080 \u1090 :\
+\'95 \uc0\u1057 \u1090 \u1088 \u1086 \u1082 \u1086 \u1074 \u1072 \u1103  \u1087 \u1077 \u1088 \u1077 \u1084 \u1077 \u1085 \u1085 \u1072 \u1103 , \u1080 \u1085 \u1080 \u1094 \u1080 \u1072 \u1083 \u1080 \u1079 \u1080 \u1088 \u1086 \u1074 \u1072 \u1085 \u1085 \u1072 \u1103  \u1082 \u1072 \u1082  "HI THIS IS BRAIN" ("\u1055 \u1056 \u1048 \u1042 \u1045 \u1058 , \u1069 \u1058 \u1054  \u1052 \u1054 \u1047 \u1043 \'94). \
+\'95 stringPTR: \uc0\u1091 \u1082 \u1072 \u1079 \u1072 \u1090 \u1077 \u1083 \u1100  \u1085 \u1072  \u1089 \u1090 \u1088 \u1086 \u1082 \u1091 .\
+\'95 stringREF: \uc0\u1089 \u1089 \u1099 \u1083 \u1082 \u1072  \u1085 \u1072  \u1089 \u1090 \u1088 \u1086 \u1082 \u1091 .\
+\
+\uc0\u1042 \u1072 \u1096 \u1072  \u1087 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1072  \u1076 \u1086 \u1083 \u1078 \u1085 \u1072  \u1087 \u1077 \u1095 \u1072 \u1090 \u1072 \u1090 \u1100 :\
+\'95 \uc0\u1040 \u1076 \u1088 \u1077 \u1089  \u1087 \u1072 \u1084 \u1103 \u1090 \u1080  \u1089 \u1090 \u1088 \u1086 \u1082 \u1086 \u1074 \u1086 \u1081  \u1087 \u1077 \u1088 \u1077 \u1084 \u1077 \u1085 \u1085 \u1086 \u1081 . \
+\'95 \uc0\u1040 \u1076 \u1088 \u1077 \u1089  \u1087 \u1072 \u1084 \u1103 \u1090 \u1080 , \u1093 \u1088 \u1072 \u1085 \u1103 \u1097 \u1080 \u1081 \u1089 \u1103  \u1074  stringPTR.\
+\'95 \uc0\u1040 \u1076 \u1088 \u1077 \u1089  \u1087 \u1072 \u1084 \u1103 \u1090 \u1080 , \u1093 \u1088 \u1072 \u1085 \u1103 \u1097 \u1080 \u1081 \u1089 \u1103  \u1074  stringREF.\
+\
+\uc0\u1048  \u1079 \u1072 \u1090 \u1077 \u1084 :\
+\'95 \uc0\u1047 \u1085 \u1072 \u1095 \u1077 \u1085 \u1080 \u1077  \u1089 \u1090 \u1088 \u1086 \u1082 \u1086 \u1074 \u1086 \u1081  \u1087 \u1077 \u1088 \u1077 \u1084 \u1077 \u1085 \u1085 \u1086 \u1081 .\
+\'95 \uc0\u1047 \u1085 \u1072 \u1095 \u1077 \u1085 \u1080 \u1077 , \u1085 \u1072  \u1082 \u1086 \u1090 \u1086 \u1088 \u1086 \u1077  \u1091 \u1082 \u1072 \u1079 \u1099 \u1074 \u1072 \u1077 \u1090  stringPTR. \
+\'95 \uc0\u1047 \u1085 \u1072 \u1095 \u1077 \u1085 \u1080 \u1077 , \u1085 \u1072  \u1082 \u1086 \u1090 \u1086 \u1088 \u1086 \u1077  \u1091 \u1082 \u1072 \u1079 \u1099 \u1074 \u1072 \u1077 \u1090  stringREF.\
+\
+\uc0\u1042 \u1086 \u1090  \u1080  \u1074 \u1089 \u1077 , \u1085 \u1080 \u1082 \u1072 \u1082 \u1080 \u1093  \u1092 \u1086 \u1082 \u1091 \u1089 \u1086 \u1074 . \u1062 \u1077 \u1083 \u1100  \u1101 \u1090 \u1086 \u1075 \u1086  \u1091 \u1087 \u1088 \u1072 \u1078 \u1085 \u1077 \u1085 \u1080 \u1103  - \u1076 \u1077 \u1084 \u1080 \u1089 \u1090 \u1080 \u1092 \u1080 \u1094 \u1080 \u1088 \u1086 \u1074 \u1072 \u1090 \u1100  \u1089 \u1089 \u1099 \u1083 \u1082 \u1080 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1077  \u1084 \u1086 \u1075 \u1091 \u1090  \u1087 \u1086 \u1082 \u1072 \u1079 \u1072 \u1090 \u1100 \u1089 \u1103  \u1089 \u1086 \u1074 \u1077 \u1088 \u1096 \u1077 \u1085 \u1085 \u1086  \u1085 \u1086 \u1074 \u1099 \u1084 \u1080 . \u1061 \u1086 \u1090 \u1103  \u1077 \u1089 \u1090 \u1100  \u1085 \u1077 \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1077  \u1085 \u1077 \u1073 \u1086 \u1083 \u1100 \u1096 \u1080 \u1077  \u1088 \u1072 \u1079 \u1083 \u1080 \u1095 \u1080 \u1103 , \u1101 \u1090 \u1086  \u1076 \u1088 \u1091 \u1075 \u1086 \u1081  \u1089 \u1080 \u1085 \u1090 \u1072 \u1082 \u1089 \u1080 \u1089  \u1076 \u1083 \u1103  \u1090 \u1086 \u1075 \u1086 , \u1095 \u1090 \u1086  \u1074 \u1099  \u1091 \u1078 \u1077  \u1076 \u1077 \u1083 \u1072 \u1077 \u1090 \u1077 : \u1084 \u1072 \u1085 \u1080 \u1087 \u1091 \u1083 \u1080 \u1088 \u1086 \u1074 \u1072 \u1085 \u1080 \u1077  \u1072 \u1076 \u1088 \u1077 \u1089 \u1072 \u1084 \u1080 .\
+\
+\pard\pardeftab720\sl760\sa240\partightenfactor0
+
+\f2\b\fs66\fsmilli33333 \cf2 Exercise 03: Unnecessary violence 
+\f3\b0\fs24 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1374\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth14195\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 \cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth15620\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth15620\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Unnecessary violence  (\uc0\u1053 \u1077 \u1085 \u1091 \u1078 \u1085 \u1086 \u1077  \u1085 \u1072 \u1089 \u1080 \u1083 \u1080 \u1077 )
+\fs24 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth15620\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth15620\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Turn-in directory : ex03/ 
+\fs24 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth15620\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth15620\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Files to turn in : Makefile, main.cpp, Weapon.\{h, hpp\}, Weapon.cpp, HumanA.\{h, hpp\}, HumanA.cpp, HumanB.\{h, hpp\}, HumanB.cpp 
+\fs24 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth15620\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth15620\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Forbidden functions : None 
+\fs24 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\partightenfactor0
+
+\fs36 \cf2 \
+\uc0\u1056 \u1077 \u1072 \u1083 \u1080 \u1079 \u1086 \u1074 \u1072 \u1090 \u1100  \u1082 \u1083 \u1072 \u1089 \u1089  \u1086 \u1088 \u1091 \u1078 \u1080 \u1103 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1081  \u1080 \u1084 \u1077 \u1077 \u1090 :\
+\'95 \uc0\u1063 \u1072 \u1089 \u1090 \u1085 \u1099 \u1081  (private) \u1072 \u1090 \u1088 \u1080 \u1073 \u1091 \u1090  type, \u1087 \u1088 \u1077 \u1076 \u1089 \u1090 \u1072 \u1074 \u1083 \u1103 \u1102 \u1097 \u1080 \u1081  \u1089 \u1086 \u1073 \u1086 \u1081  \u1089 \u1090 \u1088 \u1086 \u1082 \u1091 .\
+\'95 \uc0\u1060 \u1091 \u1085 \u1082 \u1094 \u1080 \u1102 -\u1095 \u1083 \u1077 \u1085  getType(), \u1082 \u1086 \u1090 \u1086 \u1088 \u1072 \u1103  \u1074 \u1086 \u1079 \u1074 \u1088 \u1072 \u1097 \u1072 \u1077 \u1090  \u1087 \u1086 \u1089 \u1090 \u1086 \u1103 \u1085 \u1085 \u1091 \u1102  \u1089 \u1089 \u1099 \u1083 \u1082 \u1091  \u1085 \u1072  type.\
+\'95 \uc0\u1060 \u1091 \u1085 \u1082 \u1094 \u1080 \u1102 -\u1095 \u1083 \u1077 \u1085  setType(), \u1082 \u1086 \u1090 \u1086 \u1088 \u1072 \u1103  \u1079 \u1072 \u1076 \u1072 \u1077 \u1090  type, \u1080 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1091 \u1103  \u1085 \u1086 \u1074 \u1099 \u1081  \u1090 \u1080 \u1087 , \u1087 \u1077 \u1088 \u1077 \u1076 \u1072 \u1085 \u1085 \u1099 \u1081  \u1074  \u1082 \u1072 \u1095 \u1077 \u1089 \u1090 \u1074 \u1077  \u1087 \u1072 \u1088 \u1072 \u1084 \u1077 \u1090 \u1088 \u1072 .\
+\
+\uc0\u1058 \u1077 \u1087 \u1077 \u1088 \u1100  \u1089 \u1086 \u1079 \u1076 \u1072 \u1081 \u1090 \u1077  \u1076 \u1074 \u1072  \u1082 \u1083 \u1072 \u1089 \u1089 \u1072 : HumanA \u1080  HumanB. \u1059  \u1085 \u1080 \u1093  \u1086 \u1073 \u1086 \u1080 \u1093  \u1077 \u1089 \u1090 \u1100  Weapon (\u1054 \u1088 \u1091 \u1078 \u1080 \u1077 ) \u1080  \u1080 \u1084 \u1103 . \u1059  \u1085 \u1080 \u1093  \u1090 \u1072 \u1082 \u1078 \u1077  \u1077 \u1089 \u1090 \u1100  \u1092 \u1091 \u1085 \u1082 \u1094 \u1080 \u1103 -\u1095 \u1083 \u1077 \u1085  attack(), \u1082 \u1086 \u1090 \u1086 \u1088 \u1072 \u1103  \u1086 \u1090 \u1086 \u1073 \u1088 \u1072 \u1078 \u1072 \u1077 \u1090  (\u1082 \u1086 \u1085 \u1077 \u1095 \u1085 \u1086 , \u1073 \u1077 \u1079  \u1091 \u1075 \u1083 \u1086 \u1074 \u1099 \u1093  \u1089 \u1082 \u1086 \u1073 \u1086 \u1082 ):\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f2\b \cf2 <name> attacks with their <weapon type>
+\f3\b0 \
+\
+HumanA \uc0\u1080  HumanB \u1087 \u1086 \u1095 \u1090 \u1080  \u1086 \u1076 \u1080 \u1085 \u1072 \u1082 \u1086 \u1074 \u1099 , \u1079 \u1072  \u1080 \u1089 \u1082 \u1083 \u1102 \u1095 \u1077 \u1085 \u1080 \u1077 \u1084  \u1101 \u1090 \u1080 \u1093  \u1076 \u1074 \u1091 \u1093  \u1082 \u1088 \u1086 \u1096 \u1077 \u1095 \u1085 \u1099 \u1093  \u1076 \u1077 \u1090 \u1072 \u1083 \u1077 \u1081 : \
+\'95 \uc0\u1042  \u1090 \u1086  \u1074 \u1088 \u1077 \u1084 \u1103  \u1082 \u1072 \u1082  HumanA \u1080 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1091 \u1077 \u1090  Weapon (\u1086 \u1088 \u1091 \u1078 \u1080 \u1077 ) \u1074  \u1089 \u1074 \u1086 \u1077 \u1084  \u1082 \u1086 \u1085 \u1089 \u1090 \u1088 \u1091 \u1082 \u1090 \u1086 \u1088 \u1077 , HumanB \u1101 \u1090 \u1086 \u1075 \u1086  \u1085 \u1077  \u1076 \u1077 \u1083 \u1072 \u1077 \u1090 .\
+\'95 HumanB \uc0\u1085 \u1077  \u1074 \u1089 \u1077 \u1075 \u1076 \u1072  \u1084 \u1086 \u1078 \u1077 \u1090  \u1080 \u1084 \u1077 \u1090 \u1100  Weapon (\u1086 \u1088 \u1091 \u1078 \u1080 \u1077 ), \u1074  \u1090 \u1086  \u1074 \u1088 \u1077 \u1084 \u1103  \u1082 \u1072 \u1082  HumanA \u1074 \u1089 \u1077 \u1075 \u1076 \u1072  \u1073 \u1091 \u1076 \u1077 \u1090  \u1074 \u1086 \u1086 \u1088 \u1091 \u1078 \u1077 \u1085 .\u8232 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \uc0\u1045 \u1089 \u1083 \u1080  \u1074 \u1072 \u1096 \u1072  \u1088 \u1077 \u1072 \u1083 \u1080 \u1079 \u1072 \u1094 \u1080 \u1103  \u1074 \u1077 \u1088 \u1085 \u1072 , \u1074 \u1099 \u1087 \u1086 \u1083 \u1085 \u1077 \u1085 \u1080 \u1077  \u1089 \u1083 \u1077 \u1076 \u1091 \u1102 \u1097 \u1077 \u1075 \u1086  \u1082 \u1086 \u1076 \u1072  \u1074 \u1099 \u1074 \u1077 \u1076 \u1077 \u1090  \u1072 \u1090 \u1072 \u1082 \u1091  \u1089  \u1080 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1086 \u1074 \u1072 \u1085 \u1080 \u1077 \u1084  "crude spiked club" (\'93\u1075 \u1088 \u1091 \u1073 \u1086 \u1081  \u1096 \u1080 \u1087 \u1072 \u1089 \u1090 \u1086 \u1081  \u1076 \u1091 \u1073 \u1080 \u1085 \u1082 \u1080 \'94), \u1072  \u1079 \u1072 \u1090 \u1077 \u1084  \u1074 \u1090 \u1086 \u1088 \u1091 \u1102  \u1072 \u1090 \u1072 \u1082 \u1091  \u1089  \u1080 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1086 \u1074 \u1072 \u1085 \u1080 \u1077 \u1084  "some other type of club" (\'93\u1076 \u1091 \u1073 \u1080 \u1085 \u1082 \u1080  \u1076 \u1088 \u1091 \u1075 \u1086 \u1075 \u1086  \u1090 \u1080 \u1087 \u1072 \'94) \u1076 \u1083 \u1103  \u1086 \u1073 \u1086 \u1080 \u1093  \u1090 \u1077 \u1089 \u1090 \u1086 \u1074 \u1099 \u1093  \u1089 \u1083 \u1091 \u1095 \u1072 \u1077 \u1074 :\
+\
+int main() \{ \
+  \{\
+    Weapon  club = Weapon("crude spiked club");\
+    HumanA bob("Bob", club);\
+    bob.attack();\
+    club.setType("some other type of club");\
+    bob.attack();\
+\} \
+\{\
+	Weapon  club = Weapon("crude spiked club");\
+	HumanB jim("Jim");\
+	jim.setWeapon(club);\
+	jim.attack();\
+	club.setType("some other type of club");\
+	jim.attack();\
+\}\
+return 0;\
+\}\
+\
+\uc0\u1053 \u1077  \u1079 \u1072 \u1073 \u1091 \u1076 \u1100 \u1090 \u1077  \u1087 \u1088 \u1086 \u1074 \u1077 \u1088 \u1080 \u1090 \u1100 , \u1085 \u1077 \u1090  \u1083 \u1080  \u1091 \u1090 \u1077 \u1095 \u1077 \u1082  \u1087 \u1072 \u1084 \u1103 \u1090 \u1080 .\
+\
+\uc0\u1055 \u1088 \u1080 \u1084 \u1077 \u1095 \u1072 \u1085 \u1080 \u1077 :\
+\uc0\u1042  \u1082 \u1072 \u1082 \u1086 \u1084  \u1089 \u1083 \u1091 \u1095 \u1072 \u1077 , \u1087 \u1086  \u1074 \u1072 \u1096 \u1077 \u1084 \u1091  \u1084 \u1085 \u1077 \u1085 \u1080 \u1102 , \u1073 \u1099 \u1083 \u1086  \u1073 \u1099  \u1083 \u1091 \u1095 \u1096 \u1077  \u1080 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1086 \u1074 \u1072 \u1090 \u1100  \u1091 \u1082 \u1072 \u1079 \u1072 \u1090 \u1077 \u1083 \u1100  \u1085 \u1072  \u1086 \u1088 \u1091 \u1078 \u1080 \u1077 ?  \u1048  \u1089 \u1089 \u1099 \u1083 \u1082 \u1091  \u1085 \u1072  \u1086 \u1088 \u1091 \u1078 \u1080 \u1077 ?  \u1055 \u1086 \u1095 \u1077 \u1084 \u1091 ?  \u1055 \u1086 \u1076 \u1091 \u1084 \u1072 \u1081 \u1090 \u1077  \u1086 \u1073  \u1101 \u1090 \u1086 \u1084 , \u1087 \u1088 \u1077 \u1078 \u1076 \u1077  \u1095 \u1077 \u1084  \u1085 \u1072 \u1095 \u1080 \u1085 \u1072 \u1090 \u1100  \u1101 \u1090 \u1086  \u1091 \u1087 \u1088 \u1072 \u1078 \u1085 \u1077 \u1085 \u1080 \u1077 .\
+\
+\pard\pardeftab720\sl760\sa240\partightenfactor0
+
+\f2\b\fs66\fsmilli33333 \cf2 Exercise 04: Sed is for losers (Sed \uc0\u1076 \u1083 \u1103  \u1085 \u1077 \u1091 \u1076 \u1072 \u1095 \u1085 \u1080 \u1082 \u1086 \u1074 )\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth549\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth5938\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+
+\f3\b0\fs24 \cf2 \cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth6537\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth6537\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Sed is for losers 
+\fs24 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth6537\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth6537\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Turn-in directory : ex04/ 
+\fs24 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth6537\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth6537\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Files to turn in : Makefile, main.cpp, *.cpp, *.\{h, hpp\} 
+\fs24 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth6537\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth6537\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Forbidden functions : std::string::replace 
+\fs24 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\partightenfactor0
+
+\fs36 \cf2 \
+\uc0\u1057 \u1086 \u1079 \u1076 \u1072 \u1081 \u1090 \u1077  \u1087 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1091 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1072 \u1103  \u1087 \u1088 \u1080 \u1085 \u1080 \u1084 \u1072 \u1077 \u1090  \u1090 \u1088 \u1080  \u1087 \u1072 \u1088 \u1072 \u1084 \u1077 \u1090 \u1088 \u1072  \u1074  \u1089 \u1083 \u1077 \u1076 \u1091 \u1102 \u1097 \u1077 \u1084  \u1087 \u1086 \u1088 \u1103 \u1076 \u1082 \u1077 : \u1080 \u1084 \u1103  \u1092 \u1072 \u1081 \u1083 \u1072  \u1080  \u1076 \u1074 \u1077  \u1089 \u1090 \u1088 \u1086 \u1082 \u1080 , s1 \u1080  s2.\
+\
+\uc0\u1054 \u1085 \u1072  \u1086 \u1090 \u1082 \u1088 \u1086 \u1077 \u1090  \u1092 \u1072 \u1081 \u1083  <filename> \u1080  \u1089 \u1082 \u1086 \u1087 \u1080 \u1088 \u1091 \u1077 \u1090  \u1077 \u1075 \u1086  \u1089 \u1086 \u1076 \u1077 \u1088 \u1078 \u1080 \u1084 \u1086 \u1077  \u1074  \u1085 \u1086 \u1074 \u1099 \u1081  \u1092 \u1072 \u1081 \u1083  <filename>.replace, \u1079 \u1072 \u1084 \u1077 \u1085 \u1080 \u1074  \u1082 \u1072 \u1078 \u1076 \u1086 \u1077  \u1074 \u1093 \u1086 \u1078 \u1076 \u1077 \u1085 \u1080 \u1077  s1 \u1085 \u1072  s2.\
+\
+\uc0\u1048 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1086 \u1074 \u1072 \u1085 \u1080 \u1077  \u1092 \u1091 \u1085 \u1082 \u1094 \u1080 \u1081  \u1091 \u1087 \u1088 \u1072 \u1074 \u1083 \u1077 \u1085 \u1080 \u1103  \u1092 \u1072 \u1081 \u1083 \u1072 \u1084 \u1080  C \u1079 \u1072 \u1087 \u1088 \u1077 \u1097 \u1077 \u1085 \u1086  \u1080  \u1073 \u1091 \u1076 \u1077 \u1090  \u1089 \u1095 \u1080 \u1090 \u1072 \u1090 \u1100 \u1089 \u1103  \u1084 \u1086 \u1096 \u1077 \u1085 \u1085 \u1080 \u1095 \u1077 \u1089 \u1090 \u1074 \u1086 \u1084 . \u1056 \u1072 \u1079 \u1088 \u1077 \u1096 \u1077 \u1085 \u1099  \u1074 \u1089 \u1077  \u1092 \u1091 \u1085 \u1082 \u1094 \u1080 \u1080 -\u1095 \u1083 \u1077 \u1085 \u1099  \u1082 \u1083 \u1072 \u1089 \u1089 \u1072  std::string, \u1082 \u1088 \u1086 \u1084 \u1077  replace. \u1048 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1091 \u1081 \u1090 \u1077  \u1080 \u1093  \u1089  \u1091 \u1084 \u1086 \u1084 !\
+\
+\uc0\u1050 \u1086 \u1085 \u1077 \u1095 \u1085 \u1086 , \u1086 \u1073 \u1088 \u1072 \u1073 \u1072 \u1090 \u1099 \u1074 \u1072 \u1081 \u1090 \u1077  \u1085 \u1077 \u1086 \u1078 \u1080 \u1076 \u1072 \u1085 \u1085 \u1099 \u1077  \u1074 \u1093 \u1086 \u1076 \u1085 \u1099 \u1077  \u1076 \u1072 \u1085 \u1085 \u1099 \u1077  \u1080  \u1086 \u1096 \u1080 \u1073 \u1082 \u1080 . \u1042 \u1099  \u1076 \u1086 \u1083 \u1078 \u1085 \u1099  \u1089 \u1086 \u1079 \u1076 \u1072 \u1090 \u1100  \u1080  \u1074 \u1082 \u1083 \u1102 \u1095 \u1080 \u1090 \u1100  \u1089 \u1074 \u1086 \u1080  \u1089 \u1086 \u1073 \u1089 \u1090 \u1074 \u1077 \u1085 \u1085 \u1099 \u1077  \u1090 \u1077 \u1089 \u1090 \u1099 , \u1095 \u1090 \u1086 \u1073 \u1099  \u1091 \u1073 \u1077 \u1076 \u1080 \u1090 \u1100 \u1089 \u1103 , \u1095 \u1090 \u1086  \u1074 \u1072 \u1096 \u1072  \u1087 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1072  \u1088 \u1072 \u1073 \u1086 \u1090 \u1072 \u1077 \u1090  \u1076 \u1086 \u1083 \u1078 \u1085 \u1099 \u1084  \u1086 \u1073 \u1088 \u1072 \u1079 \u1086 \u1084 .
+\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl760\sa240\partightenfactor0
+
+\f2\b\fs66\fsmilli33333 \cf2 Exercise 05: Harl 2.0 
+\f3\b0\fs24 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth618\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth6635\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 \cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth7303\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth7303\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Harl 2.0 
+\fs24 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth7303\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth7303\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Turn-in directory : ex05/ 
+\fs24 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth7303\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth7303\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Files to turn in : Makefile, main.cpp, Harl.\{h, hpp\}, Harl.cpp 
+\fs24 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth7303\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth7303\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Forbidden functions : None 
+\fs24 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\fs36 \cf2 \uc0\u1058 \u1099  \u1079 \u1085 \u1072 \u1077 \u1096 \u1100  \u1061 \u1072 \u1088 \u1083 \u1072 ? \u1052 \u1099  \u1074 \u1089 \u1077  \u1090 \u1072 \u1082  \u1076 \u1077 \u1083 \u1072 \u1077 \u1084 , \u1085 \u1077  \u1090 \u1072 \u1082  \u1083 \u1080 ? \u1042  \u1089 \u1083 \u1091 \u1095 \u1072 \u1077 , \u1077 \u1089 \u1083 \u1080  \u1074 \u1099  \u1101 \u1090 \u1086 \u1075 \u1086  \u1085 \u1077  \u1089 \u1076 \u1077 \u1083 \u1072 \u1077 \u1090 \u1077 , \u1085 \u1072 \u1081 \u1076 \u1080 \u1090 \u1077  \u1085 \u1080 \u1078 \u1077  \u1082 \u1086 \u1084 \u1084 \u1077 \u1085 \u1090 \u1072 \u1088 \u1080 \u1080 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1077  \u1076 \u1077 \u1083 \u1072 \u1077 \u1090  \u1061 \u1072 \u1088 \u1083 . \u1054 \u1085 \u1080  \u1082 \u1083 \u1072 \u1089 \u1089 \u1080 \u1092 \u1080 \u1094 \u1080 \u1088 \u1091 \u1102 \u1090 \u1089 \u1103  \u1087 \u1086  \u1091 \u1088 \u1086 \u1074 \u1085 \u1103 \u1084 :\
+\
+\uc0\u1059 \u1088 \u1086 \u1074 \u1077 \u1085 \u1100  "
+\f2\b DEBUG
+\f3\b0 ": \uc0\u1054 \u1090 \u1083 \u1072 \u1076 \u1086 \u1095 \u1085 \u1099 \u1077  \u1089 \u1086 \u1086 \u1073 \u1097 \u1077 \u1085 \u1080 \u1103  \u1089 \u1086 \u1076 \u1077 \u1088 \u1078 \u1072 \u1090  \u1082 \u1086 \u1085 \u1090 \u1077 \u1082 \u1089 \u1090 \u1085 \u1091 \u1102  \u1080 \u1085 \u1092 \u1086 \u1088 \u1084 \u1072 \u1094 \u1080 \u1102 . \u1054 \u1085 \u1080  \u1074  \u1086 \u1089 \u1085 \u1086 \u1074 \u1085 \u1086 \u1084  \u1080 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1091 \u1102 \u1090 \u1089 \u1103  \u1076 \u1083 \u1103  \u1076 \u1080 \u1072 \u1075 \u1085 \u1086 \u1089 \u1090 \u1080 \u1082 \u1080  \u1087 \u1088 \u1086 \u1073 \u1083 \u1077 \u1084 .\
+\uc0\u1055 \u1088 \u1080 \u1084 \u1077 \u1088 : \cf2 \kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+"I love having extra bacon for my 7XL-double-cheese-triple-pickle-special- ketchup burger. I really do!" \cf2 \
+"\uc0\u1052 \u1085 \u1077  \u1085 \u1088 \u1072 \u1074 \u1080 \u1090 \u1089 \u1103  \u1077 \u1089 \u1090 \u1100  \u1076 \u1086 \u1087 \u1086 \u1083 \u1085 \u1080 \u1090 \u1077 \u1083 \u1100 \u1085 \u1099 \u1081  \u1073 \u1077 \u1082 \u1086 \u1085  \u1076 \u1083 \u1103  \u1084 \u1086 \u1077 \u1075 \u1086  \u1073 \u1091 \u1088 \u1075 \u1077 \u1088 \u1072  7XL \u1089  \u1076 \u1074 \u1086 \u1081 \u1085 \u1099 \u1084  \u1089 \u1099 \u1088 \u1086 \u1084 , \u1090 \u1088 \u1086 \u1081 \u1085 \u1099 \u1084  \u1084 \u1072 \u1088 \u1080 \u1085 \u1072 \u1076 \u1086 \u1084  \u1080  \u1089 \u1087 \u1077 \u1094 \u1080 \u1072 \u1083 \u1100 \u1085 \u1099 \u1084  \u1082 \u1077 \u1090 \u1095 \u1091 \u1087 \u1086 \u1084 . \u1071  \u1076 \u1077 \u1081 \u1089 \u1090 \u1074 \u1080 \u1090 \u1077 \u1083 \u1100 \u1085 \u1086  \u1093 \u1086 \u1095 \u1091 !"\
+\
+\uc0\u1059 \u1088 \u1086 \u1074 \u1077 \u1085 \u1100  \'93
+\f2\b INFO
+\f3\b0 \'94: \uc0\u1069 \u1090 \u1080  \u1089 \u1086 \u1086 \u1073 \u1097 \u1077 \u1085 \u1080 \u1103  \u1089 \u1086 \u1076 \u1077 \u1088 \u1078 \u1072 \u1090  \u1086 \u1073 \u1096 \u1080 \u1088 \u1085 \u1091 \u1102  \u1080 \u1085 \u1092 \u1086 \u1088 \u1084 \u1072 \u1094 \u1080 \u1102 . \u1054 \u1085 \u1080  \u1087 \u1086 \u1083 \u1077 \u1079 \u1085 \u1099  \u1076 \u1083 \u1103  \u1086 \u1090 \u1089 \u1083 \u1077 \u1078 \u1080 \u1074 \u1072 \u1085 \u1080 \u1103  \u1074 \u1099 \u1087 \u1086 \u1083 \u1085 \u1077 \u1085 \u1080 \u1103  \u1087 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1099  \u1074  \u1087 \u1088 \u1086 \u1080 \u1079 \u1074 \u1086 \u1076 \u1089 \u1090 \u1074 \u1077 \u1085 \u1085 \u1086 \u1081  \u1089 \u1088 \u1077 \u1076 \u1077 .\
+\uc0\u1055 \u1088 \u1080 \u1084 \u1077 \u1088 : \cf2 \kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+"I cannot believe adding extra bacon costs more money. You didn\'92t put enough bacon in my burger! If you did, I wouldn\'92t be asking for more!" \cf2 \
+"\uc0\u1071  \u1085 \u1077  \u1084 \u1086 \u1075 \u1091  \u1087 \u1086 \u1074 \u1077 \u1088 \u1080 \u1090 \u1100 , \u1095 \u1090 \u1086  \u1076 \u1086 \u1073 \u1072 \u1074 \u1083 \u1077 \u1085 \u1080 \u1077  \u1076 \u1086 \u1087 \u1086 \u1083 \u1085 \u1080 \u1090 \u1077 \u1083 \u1100 \u1085 \u1086 \u1075 \u1086  \u1073 \u1077 \u1082 \u1086 \u1085 \u1072  \u1089 \u1090 \u1086 \u1080 \u1090  \u1073 \u1086 \u1083 \u1100 \u1096 \u1077  \u1076 \u1077 \u1085 \u1077 \u1075 . \u1058 \u1099  \u1087 \u1086 \u1083 \u1086 \u1078 \u1080 \u1083  \u1085 \u1077 \u1076 \u1086 \u1089 \u1090 \u1072 \u1090 \u1086 \u1095 \u1085 \u1086  \u1073 \u1077 \u1082 \u1086 \u1085 \u1072  \u1074  \u1084 \u1086 \u1081  \u1073 \u1091 \u1088 \u1075 \u1077 \u1088 ! \u1045 \u1089 \u1083 \u1080  \u1073 \u1099  \u1090 \u1099  \u1101 \u1090 \u1086  \u1089 \u1076 \u1077 \u1083 \u1072 \u1083 , \u1103  \u1073 \u1099  \u1085 \u1077  \u1087 \u1088 \u1086 \u1089 \u1080 \u1083  \u1073 \u1086 \u1083 \u1100 \u1096 \u1077 \u1075 \u1086 !"\
+\
+\uc0\u1059 \u1088 \u1086 \u1074 \u1077 \u1085 \u1100  \'93
+\f2\b WARNING
+\f3\b0 \'94 (\'94\uc0\u1055 \u1056 \u1045 \u1044 \u1059 \u1055 \u1056 \u1045 \u1046 \u1044 \u1045 \u1053 \u1048 \u1045 \'94): \u1055 \u1088 \u1077 \u1076 \u1091 \u1087 \u1088 \u1077 \u1078 \u1076 \u1072 \u1102 \u1097 \u1080 \u1077  \u1089 \u1086 \u1086 \u1073 \u1097 \u1077 \u1085 \u1080 \u1103  \u1091 \u1082 \u1072 \u1079 \u1099 \u1074 \u1072 \u1102 \u1090  \u1085 \u1072  \u1087 \u1086 \u1090 \u1077 \u1085 \u1094 \u1080 \u1072 \u1083 \u1100 \u1085 \u1091 \u1102  \u1087 \u1088 \u1086 \u1073 \u1083 \u1077 \u1084 \u1091  \u1074  \u1089 \u1080 \u1089 \u1090 \u1077 \u1084 \u1077 . \u1054 \u1076 \u1085 \u1072 \u1082 \u1086  \u1101 \u1090 \u1086  \u1084 \u1086 \u1078 \u1077 \u1090  \u1073 \u1099 \u1090 \u1100  \u1086 \u1073 \u1088 \u1072 \u1073 \u1086 \u1090 \u1072 \u1085 \u1086  \u1080 \u1083 \u1080  \u1087 \u1088 \u1086 \u1080 \u1075 \u1085 \u1086 \u1088 \u1080 \u1088 \u1086 \u1074 \u1072 \u1085 \u1086 .\
+\uc0\u1055 \u1088 \u1080 \u1084 \u1077 \u1088 : \cf2 \kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+I think I deserve to have some extra bacon for free. I\'92ve been coming for years whereas you started working here since last month." \cf2 \
+"\uc0\u1071  \u1076 \u1091 \u1084 \u1072 \u1102 , \u1095 \u1090 \u1086  \u1079 \u1072 \u1089 \u1083 \u1091 \u1078 \u1080 \u1074 \u1072 \u1102  \u1087 \u1086 \u1083 \u1091 \u1095 \u1080 \u1090 \u1100  \u1085 \u1077 \u1084 \u1085 \u1086 \u1075 \u1086  \u1076 \u1086 \u1087 \u1086 \u1083 \u1085 \u1080 \u1090 \u1077 \u1083 \u1100 \u1085 \u1086 \u1075 \u1086  \u1073 \u1077 \u1082 \u1086 \u1085 \u1072  \u1073 \u1077 \u1089 \u1087 \u1083 \u1072 \u1090 \u1085 \u1086 . \u1071  \u1087 \u1088 \u1080 \u1093 \u1086 \u1078 \u1091  \u1089 \u1102 \u1076 \u1072  \u1091 \u1078 \u1077  \u1084 \u1085 \u1086 \u1075 \u1086  \u1083 \u1077 \u1090 , \u1074  \u1090 \u1086  \u1074 \u1088 \u1077 \u1084 \u1103  \u1082 \u1072 \u1082  \u1090 \u1099  \u1085 \u1072 \u1095 \u1072 \u1083  \u1088 \u1072 \u1073 \u1086 \u1090 \u1072 \u1090 \u1100  \u1079 \u1076 \u1077 \u1089 \u1100  \u1089  \u1087 \u1088 \u1086 \u1096 \u1083 \u1086 \u1075 \u1086  \u1084 \u1077 \u1089 \u1103 \u1094 \u1072 ."\
+\
+\uc0\u1059 \u1088 \u1086 \u1074 \u1077 \u1085 \u1100  "
+\f2\b ERROR
+\f3\b0 ": \uc0\u1069 \u1090 \u1080  \u1089 \u1086 \u1086 \u1073 \u1097 \u1077 \u1085 \u1080 \u1103  \u1091 \u1082 \u1072 \u1079 \u1099 \u1074 \u1072 \u1102 \u1090  \u1085 \u1072  \u1090 \u1086 , \u1095 \u1090 \u1086  \u1087 \u1088 \u1086 \u1080 \u1079 \u1086 \u1096 \u1083 \u1072  \u1085 \u1077 \u1091 \u1089 \u1090 \u1088 \u1072 \u1085 \u1080 \u1084 \u1072 \u1103  \u1086 \u1096 \u1080 \u1073 \u1082 \u1072 . \u1054 \u1073 \u1099 \u1095 \u1085 \u1086  \u1101 \u1090 \u1086  \u1082 \u1088 \u1080 \u1090 \u1080 \u1095 \u1077 \u1089 \u1082 \u1072 \u1103  \u1087 \u1088 \u1086 \u1073 \u1083 \u1077 \u1084 \u1072 , \u1090 \u1088 \u1077 \u1073 \u1091 \u1102 \u1097 \u1072 \u1103  \u1088 \u1091 \u1095 \u1085 \u1086 \u1075 \u1086  \u1074 \u1084 \u1077 \u1096 \u1072 \u1090 \u1077 \u1083 \u1100 \u1089 \u1090 \u1074 \u1072 .\
+\uc0\u1055 \u1088 \u1080 \u1084 \u1077 \u1088 : \cf2 \kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+"This is unacceptable! I want to speak to the manager now." \cf2 \
+"\uc0\u1069 \u1090 \u1086  \u1085 \u1077 \u1087 \u1088 \u1080 \u1077 \u1084 \u1083 \u1077 \u1084 \u1086 ! \u1071  \u1093 \u1086 \u1095 \u1091  \u1087 \u1086 \u1075 \u1086 \u1074 \u1086 \u1088 \u1080 \u1090 \u1100  \u1089  \u1084 \u1077 \u1085 \u1077 \u1076 \u1078 \u1077 \u1088 \u1086 \u1084  \u1087 \u1088 \u1103 \u1084 \u1086  \u1089 \u1077 \u1081 \u1095 \u1072 \u1089 ."\
+\
+\uc0\u1042 \u1099  \u1089 \u1086 \u1073 \u1080 \u1088 \u1072 \u1077 \u1090 \u1077 \u1089 \u1100  \u1072 \u1074 \u1090 \u1086 \u1084 \u1072 \u1090 \u1080 \u1079 \u1080 \u1088 \u1086 \u1074 \u1072 \u1090 \u1100  Harl. \u1069 \u1090 \u1086  \u1073 \u1091 \u1076 \u1077 \u1090  \u1085 \u1077 \u1090 \u1088 \u1091 \u1076 \u1085 \u1086 , \u1090 \u1072 \u1082  \u1082 \u1072 \u1082  \u1090 \u1072 \u1084  \u1074 \u1089 \u1077 \u1075 \u1076 \u1072  \u1075 \u1086 \u1074 \u1086 \u1088 \u1080 \u1090 \u1089 \u1103  \u1086 \u1076 \u1085 \u1086  \u1080  \u1090 \u1086  \u1078 \u1077 . \u1042 \u1099  \u1076 \u1086 \u1083 \u1078 \u1085 \u1099  \u1089 \u1086 \u1079 \u1076 \u1072 \u1090 \u1100  \u1082 \u1083 \u1072 \u1089 \u1089  Harl \u1089 \u1086  \u1089 \u1083 \u1077 \u1076 \u1091 \u1102 \u1097 \u1080 \u1084 \u1080  private (\u1095 \u1072 \u1089 \u1090 \u1085 \u1099 \u1084 \u1080 ) \u1092 \u1091 \u1085 \u1082 \u1094 \u1080 \u1103 \u1084 \u1080 -\u1095 \u1083 \u1077 \u1085 \u1072 \u1084 \u1080 :\
+\
+\'95 void debug( void );\uc0\u8232 \'95 void info( void );\u8232 \'95 void warning( void ); \
+\'95 void error( void ); \
+\
+\
+Harl \uc0\u1090 \u1072 \u1082 \u1078 \u1077  \u1080 \u1084 \u1077 \u1077 \u1090  public (\u1086 \u1073 \u1097 \u1077 \u1076 \u1086 \u1089 \u1090 \u1091 \u1087 \u1085 \u1091 \u1102 ) \u1092 \u1091 \u1085 \u1082 \u1094 \u1080 \u1102 -\u1095 \u1083 \u1077 \u1085 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1072 \u1103  \u1074 \u1099 \u1079 \u1099 \u1074 \u1072 \u1077 \u1090  \u1095 \u1077 \u1090 \u1099 \u1088 \u1077  \u1092 \u1091 \u1085 \u1082 \u1094 \u1080 \u1080 -\u1095 \u1083 \u1077 \u1085 \u1072 , \u1086 \u1087 \u1080 \u1089 \u1072 \u1085 \u1085 \u1099 \u1077  \u1074 \u1099 \u1096 \u1077 , \u1074  \u1079 \u1072 \u1074 \u1080 \u1089 \u1080 \u1084 \u1086 \u1089 \u1090 \u1080  \u1086 \u1090  \u1091 \u1088 \u1086 \u1074 \u1085 \u1103 , \u1087 \u1077 \u1088 \u1077 \u1076 \u1072 \u1085 \u1085 \u1086 \u1075 \u1086  \u1074  \u1082 \u1072 \u1095 \u1077 \u1089 \u1090 \u1074 \u1077  \u1087 \u1072 \u1088 \u1072 \u1084 \u1077 \u1090 \u1088 \u1072 :\
+   
+\fs32 void    complain( std::string level );\
+
+\fs36 \
+\uc0\u1062 \u1077 \u1083 \u1100  \u1101 \u1090 \u1086 \u1075 \u1086  \u1091 \u1087 \u1088 \u1072 \u1078 \u1085 \u1077 \u1085 \u1080 \u1103  - \u1080 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1086 \u1074 \u1072 \u1090 \u1100  \u1091 \u1082 \u1072 \u1079 \u1072 \u1090 \u1077 \u1083 \u1080  \u1085 \u1072  \u1092 \u1091 \u1085 \u1082 \u1094 \u1080 \u1080 -\u1095 \u1083 \u1077 \u1085 \u1099 . \u1069 \u1090 \u1086  \u1085 \u1077  \u1087 \u1088 \u1077 \u1076 \u1083 \u1086 \u1078 \u1077 \u1085 \u1080 \u1077 . \u1061 \u1072 \u1088 \u1083  \u1076 \u1086 \u1083 \u1078 \u1077 \u1085  \u1078 \u1072 \u1083 \u1086 \u1074 \u1072 \u1090 \u1100 \u1089 \u1103 , \u1085 \u1077  \u1080 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1091 \u1103  \u1083 \u1077 \u1089  if/else if/else. \u1054 \u1085  \u1085 \u1077  \u1076 \u1091 \u1084 \u1072 \u1077 \u1090  \u1076 \u1074 \u1072 \u1078 \u1076 \u1099 !\
+\uc0\u1057 \u1086 \u1079 \u1076 \u1072 \u1081 \u1090 \u1077  \u1080  \u1074 \u1082 \u1083 \u1102 \u1095 \u1080 \u1090 \u1077  \u1090 \u1077 \u1089 \u1090 \u1099 , \u1095 \u1090 \u1086 \u1073 \u1099  \u1087 \u1086 \u1082 \u1072 \u1079 \u1072 \u1090 \u1100 , \u1095 \u1090 \u1086  \u1061 \u1072 \u1088 \u1083  \u1084 \u1085 \u1086 \u1075 \u1086  \u1078 \u1072 \u1083 \u1091 \u1077 \u1090 \u1089 \u1103 . \u1042 \u1099  \u1084 \u1086 \u1078 \u1077 \u1090 \u1077  \u1080 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1086 \u1074 \u1072 \u1090 \u1100  \u1087 \u1088 \u1080 \u1084 \u1077 \u1088 \u1099  \u1082 \u1086 \u1084 \u1084 \u1077 \u1085 \u1090 \u1072 \u1088 \u1080 \u1077 \u1074 .\
+\
+\pard\pardeftab720\sl760\sa240\partightenfactor0
+
+\f2\b\fs66\fsmilli33333 \cf2 Exercise 06: Harl filter 
+\f3\b0\fs24 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth618\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth6635\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 \cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth7303\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth7303\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth7303\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth7303\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Turn-in directory : ex06/ 
+\fs24 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth7303\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth7303\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Files to turn in : Makefile, main.cpp, Harl.\{h, hpp\}, Harl.cpp 
+\fs24 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth7303\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth7303\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrs\brdrw10\brdrcf2 \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrs\brdrw10\brdrcf2 \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 Forbidden functions : None 
+\fs24 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\partightenfactor0
+
+\fs36 \cf2 \
+\uc0\u1048 \u1085 \u1086 \u1075 \u1076 \u1072  \u1074 \u1099  \u1085 \u1077  \u1093 \u1086 \u1090 \u1080 \u1090 \u1077  \u1086 \u1073 \u1088 \u1072 \u1097 \u1072 \u1090 \u1100  \u1074 \u1085 \u1080 \u1084 \u1072 \u1085 \u1080 \u1077  \u1085 \u1072  \u1074 \u1089 \u1077 , \u1095 \u1090 \u1086  \u1075 \u1086 \u1074 \u1086 \u1088 \u1080 \u1090  \u1061 \u1072 \u1088 \u1083 . \u1042 \u1085 \u1077 \u1076 \u1088 \u1080 \u1090 \u1077  \u1089 \u1080 \u1089 \u1090 \u1077 \u1084 \u1091  \u1076 \u1083 \u1103  \u1092 \u1080 \u1083 \u1100 \u1090 \u1088 \u1072 \u1094 \u1080 \u1080  \u1090 \u1086 \u1075 \u1086 , \u1095 \u1090 \u1086  \u1075 \u1086 \u1074 \u1086 \u1088 \u1080 \u1090  \u1063 \u1072 \u1088 \u1083 \u1080 , \u1074  \u1079 \u1072 \u1074 \u1080 \u1089 \u1080 \u1084 \u1086 \u1089 \u1090 \u1080  \u1086 \u1090  \u1091 \u1088 \u1086 \u1074 \u1085 \u1077 \u1081  \u1078 \u1091 \u1088 \u1085 \u1072 \u1083 \u1072 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1077  \u1074 \u1099  \u1093 \u1086 \u1090 \u1080 \u1090 \u1077  \u1087 \u1088 \u1086 \u1089 \u1083 \u1091 \u1096 \u1072 \u1090 \u1100 .\
+\uc0\u1057 \u1086 \u1079 \u1076 \u1072 \u1081 \u1090 \u1077  \u1087 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1091 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1072 \u1103  \u1087 \u1088 \u1080 \u1085 \u1080 \u1084 \u1072 \u1077 \u1090  \u1074  \u1082 \u1072 \u1095 \u1077 \u1089 \u1090 \u1074 \u1077  \u1087 \u1072 \u1088 \u1072 \u1084 \u1077 \u1090 \u1088 \u1072  \u1086 \u1076 \u1080 \u1085  \u1080 \u1079  \u1095 \u1077 \u1090 \u1099 \u1088 \u1077 \u1093  \u1091 \u1088 \u1086 \u1074 \u1085 \u1077 \u1081 . \u1042  \u1085 \u1077 \u1084  \u1073 \u1091 \u1076 \u1091 \u1090  \u1086 \u1090 \u1086 \u1073 \u1088 \u1072 \u1078 \u1072 \u1090 \u1100 \u1089 \u1103  \u1074 \u1089 \u1077  \u1089 \u1086 \u1086 \u1073 \u1097 \u1077 \u1085 \u1080 \u1103  \u1089  \u1101 \u1090 \u1086 \u1075 \u1086  \u1091 \u1088 \u1086 \u1074 \u1085 \u1103  \u1080  \u1074 \u1099 \u1096 \u1077 . \
+\uc0\u1053 \u1072 \u1087 \u1088 \u1080 \u1084 \u1077 \u1088 :
+\fs24 \
+\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat2 \clwWidth6900\clftsWidth3 \clbrdrt\brdrs\brdrw90\brdrcf4 \clbrdrl\brdrnil \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl260\partightenfactor0
+
+\fs28 \cf3 $> ./harlFilter "WARNING"\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat2 \clwWidth6900\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrnil \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl260\partightenfactor0
+\cf3 [ WARNING ]\
+I think I deserve to have some extra bacon for free.\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat2 \clwWidth6900\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrnil \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl260\partightenfactor0
+\cf3 I've been coming for years whereas you started working here since last month.\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat2 \clwWidth6900\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrnil \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl260\partightenfactor0
+\cf3 [ ERROR ]\
+This is unacceptable, I want to speak to the manager now.\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat2 \clwWidth6900\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrnil \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl260\partightenfactor0
+\cf3 $> ./harlFilter "I am not sure how tired I am today..."\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat2 \clwWidth6900\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrnil \clbrdrb\brdrs\brdrw90\brdrcf4 \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl260\partightenfactor0
+\cf3 [ Probably complaining about insignificant problems ]\cell \lastrow\row
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\fs36 \cf2 \uc0\u1061 \u1086 \u1090 \u1103  \u1077 \u1089 \u1090 \u1100  \u1085 \u1077 \u1089 \u1082 \u1086 \u1083 \u1100 \u1082 \u1086  \u1089 \u1087 \u1086 \u1089 \u1086 \u1073 \u1086 \u1074  \u1089 \u1087 \u1088 \u1072 \u1074 \u1080 \u1090 \u1100 \u1089 \u1103  \u1089  Harl, \u1086 \u1076 \u1080 \u1085  \u1080 \u1079  \u1085 \u1072 \u1080 \u1073 \u1086 \u1083 \u1077 \u1077  \u1101 \u1092 \u1092 \u1077 \u1082 \u1090 \u1080 \u1074 \u1085 \u1099 \u1093  - \cf2 to SWITCH it off \
+\cf2 (\uc0\u1086 \u1090 \u1082 \u1083 \u1102 \u1095 \u1080 \u1090 \u1100  \u1077 \u1075 \u1086 ) :).\
+\uc0\u1044 \u1072 \u1081 \u1090 \u1077  \u1080 \u1084 \u1103  harlFilter \u1074 \u1072 \u1096 \u1077 \u1084 \u1091  \u1080 \u1089 \u1087 \u1086 \u1083 \u1085 \u1103 \u1077 \u1084 \u1086 \u1084 \u1091  \u1092 \u1072 \u1081 \u1083 \u1091 .\
+\
+\uc0\u1055 \u1088 \u1080 \u1084 \u1077 \u1095 \u1072 \u1085 \u1080 \u1077 : \u1042 \u1099  \u1084 \u1086 \u1078 \u1077 \u1090 \u1077  \u1087 \u1088 \u1086 \u1081 \u1090 \u1080  \u1101 \u1090 \u1086 \u1090  \u1084 \u1086 \u1076 \u1091 \u1083 \u1100 , \u1085 \u1077  \u1074 \u1099 \u1087 \u1086 \u1083 \u1085 \u1103 \u1103  \u1091 \u1087 \u1088 \u1072 \u1078 \u1085 \u1077 \u1085 \u1080 \u1077  06.
+\fs24 \
+}
